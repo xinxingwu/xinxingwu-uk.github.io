@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Native by Using Expo Go</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+		code{
+			color: blue;
+		}
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Header Animation */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: slideIn 1s forwards 0.5s;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Content and Image Animations */
+        .content {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            opacity: 0;
+            animation: slideInContent 1.5s forwards 1s;
+        }
+
+        .content img {
+            width: 50%;
+            border-radius: 8px;
+            transform: scale(0);
+            animation: zoomIn 1s forwards 1.5s;
+        }
+
+        .content .text {
+            flex: 1;
+            font-size: 1.1em;
+            color: #333;
+            transform: translateY(50px);
+            animation: slideUp 1s forwards 1s;
+        }
+
+        /* Footer Animation */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1em;
+            color: #777;
+            opacity: 0;
+            animation: fadeIn 1s forwards 2s;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInContent {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Method 1: Introduction to React Native</h1>
+    </div>
+	<hr>
+	<div>
+        <div class="text">
+            <h2>Set-up development environment - Visual studio code</h2>
+            <p>
+                <ui>
+					<li>
+						Step 1: node.js, visual studio code
+					</li>
+					<li>
+						Step 2: Install Expo CLI 
+						<code> npm install -g expo-cli</code>
+					</li>
+					<li>
+						Step 3: Create a New Expo Project 
+						<code> npx expo init MyNewExpoProjectApp</code>
+					</li>
+					<li>
+						Step 4: Navigate to the Project Directory 
+						<code> cd MyNewExpoProjectApp</code>
+					</li>
+					<li>
+						Step 5: Start the Development Server:
+						<code> npx expo start</code>
+					</li>
+					<li>
+						Use the Expo Go app on your mobile device to scan the QR code.
+					</li>
+					
+					 <img src="imgs/pro11.jpg" alt="Image Description">
+					 
+					 <img src="imgs/pro12.jpg" alt="Image Description">
+				</ui>
+            </p>
+
+            <p>
+                A note: for more details, please see <a href=" https://midway.instructure.com/courses/6069/pages/topic-3-iv-slides-react-native-basics?module_item_id=490777">Link</a>
+
+            </p>
+        </div>
+	
+	</div>
+	
+	<hr>
+	<h1>Method 2 - computers/laptops and phones do not need the same local network</h1>
+
+    <div class="content">
+        <img src="imgs/pro13.jpg" alt="Image Description">
+        <div class="text">
+            <h2>Using Expo Go</h2>
+            <p>
+                Expo Go App: You can use the Expo Go app from the App Store to run basic React Native projects. Expo provides a managed workflow where you can edit code from an online editor like Snack and see changes in real-time on your iPad.
+            </p>
+            <h2>Online Editor (Snack)</h2>
+            <p>
+                Expo’s Snack https://snack.expo.dev/ lets you write and run React Native code directly in the browser. Go to the Snack website on Safari or Chrome on your iPad, and you can start coding in React Native with live previews.
+            </p>
+        </div>
+    </div>
+	
+	<div>
+        <div class="text">
+            <h2>Set-up development environment</h2>
+            <p>
+                <ui>
+					<li>
+						1: Project
+					</li>
+					<li>
+						2: Open files
+					</li>
+					<li>
+						3: Preview
+					</li>
+					<li>
+						4: Different devices
+					</li>
+					<li>
+						5: Editor settings
+					</li>
+					<li>
+						*6: Run on devices
+						 <img src="imgs/pro16.jpg" alt="Image Description">
+						 Login your account 
+						 
+						 <img src="imgs/pro17.jpg" alt="Image Description">
+					</li>
+					<li>
+						*7\& 8: Simulation
+						<img src="imgs/pro18.jpg" alt="Image Description">
+					</li>
+					<li>
+						9: Login
+						<img src="imgs/pro14.jpg" alt="Image Description">
+						<img src="imgs/pro15.jpg" alt="Image Description">
+						<img src="imgs/pro19.jpg" alt="Image Description">
+					</li>
+				</ui>
+            </p>
+        </div>
+	
+	</div>
+	
+	<hr>
+
+    <div class="footer">
+        <p>&copy; 2024 Xinxing Wu. All Rights Reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>
